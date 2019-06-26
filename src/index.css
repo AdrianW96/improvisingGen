@@ -1,13 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lora&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    max-width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ddd;
+    font-family: 'Lora', serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.App {
+    margin-top: 20vh;
+    padding: 3vh;
+}
+
+.countdown {
+    font-family: 'Dancing Script', cursive;
+    min-height: 25vh;
+    display: grid;
+    place-items: center;
+    /* background-color: #ddd; */
+    color: #333;
+    /* border-bottom: 5px solid blue;
+    border-right: 5px solid yellow;
+    border-left: 5px solid red; */
+}
+
+.topic-output {
+    font-family: 'Lora', serif;
+    min-height: 20vh;
+    display: grid;
+    place-items: center;
+    /* background-color: #8fd3d8; */
+    color: #1114cc;
+    /* border-top: 5px solid green;
+    border-right: 5px solid yellow;
+    border-left: 5px solid red;
+    border-bottom: 1px solid black; */
+}
+
+.App {
+    background: white;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0%;
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+}
+.App:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5%;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.line {
+    width: 75%;
+    margin: 0px auto;
+    height: 2px;
+    background-color: black;
+}
+
+.skipButton {
+    width: 130px;
+    height: 40px;
+    background: linear-gradient(to bottom, #4eb5e5 0%, #389ed5 100%); /* W3C */
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    border-bottom: 4px solid #2b8bc6;
+    color: #fbfbfb;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+    text-align: left;
+    text-indent: 5px;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.skipButton:active {
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+    top: 1px;
+}
+
+.skipButton:after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 20px solid #187dbc;
+    border-bottom: 20px solid #187dbc;
+    border-left: 16px solid transparent;
+    border-right: 20px solid #187dbc;
+    position: absolute;
+    opacity: 0.6;
+    right: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+form {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.startButton {
+    margin-left: 10px;
+}
+
+.submitButton {
+    background-color: #00c5be;
+    border: 1px solid grey;
+    margin-left: 10px;
+    color: #fff;
+    padding: 12px 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.inputField {
+    font-size: 1.2em;
+    border: 1px solid gainsboro;
+    font-family: inherit;
+    font-weight: 300;
 }
